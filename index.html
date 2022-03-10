@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="fontfile.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("wine.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">PRODUCTS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">MERAKI<br>WINERY</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT MERAKI WINERY</span></h5>
+    <p>Meraki Wine Company is committed to finding high quality wines and spirits; to discovering accoutrements which enhance the appreciation of these distinctive and authentic tastes. We maintain the highest level of expertise and professionalism in order to market and sell them to food and wine purveyors. We are responsible for shipping, storing, and delivering these products in a manner that preserves their integrity. To evolve as one of the best producer of quality red wine which is consumed for the consumer contentment and to create local opportunity, growth and impact in every community and country around the world as adapting a wide cultural perspective.</p>
+    <p>The winery provides good vacationing grounds for food and wine lovers. Known for its practices of fine winemaking and harvesting the best quality of grapes across the Nashik region the wines from Meraki are sure to make for an unforgettable experience.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+    </div>
+    <img src="logo.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 9am to 5pm.</p>
+    <!-- <p><strong>Address:</strong> 15 Adr street, 5015, NY</p> -->
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE PRODUCTS</span></h5>
+
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Page 1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Page 2</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Cabernet Franc</h5>
+      <p class="w3-text-grey">Flavours: Voilet, blueberry, earth, black olive, coffee</p><br>
+
+      <h5>Cabernet Sauvignon</h5>
+      <p class="w3-text-grey">Flavours: Bell pepper, green olive, herb, classic, black cherry</p><br>
+
+      <h5>Gamay</h5>
+      <p class="w3-text-grey">Flavours: Strawberry, raspberry, cherry</p><br>
+
+      <h5>Grenache/Garnacha</h5>
+      <p class="w3-text-grey">Flavours: Spice, cherry</p><br>
+
+      <h5>Malbec</h5>
+      <p class="w3-text-grey">Flavours: Sour cherry, spice</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Merlot</h5>
+      <p class="w3-text-grey">Flavours: Watermelon, strawberry, cherry, plum</p><br>
+
+      <h5>Mourvèdre/Mataro</h5>
+      <p class="w3-text-grey">Flavours: Spice, cherry</p><br>
+
+      <h5>Nebbiolo</h5>
+      <p class="w3-text-grey">Flavours: Plum, pie cherry, tar</p><br>
+
+      <h5>Pinot Noir</h5>
+      <p class="w3-text-grey">Flavours: Tomato leaf, beet root, pale cherry, blackberry, cola, plum</p><br>
+
+      <h5>Sangiovse</h5>
+      <p class="w3-text-grey">Flavours: Pie cherry, anise, tobacco leaf</p>
+    </div>
+    <img src="wine2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at Gate No. 10/2, Govardhan Village, off Gangapur Savargaon Road, Nashik, Maharashtra, 422222.</p>
+    <!-- <img src="/w3images/map.jpg" class="w3-image" style="width:100%"> -->
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the wine to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <!-- <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p> -->
+    <p><strong>Leave us a feedback message:</strong></p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Your phone number" required name="Phone Number"></p>
+      <!-- <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p> -->
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by Meraki Winery: A splash of Red</p>
+  <p>CONTACT US</p>
+  <p>EMAIL: merlotwinery.meraki@gmail.com</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
